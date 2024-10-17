@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+$heading: 'Pathway', sans-serif;
+$body: 'Raleway', sans-serif;
+$background: #fbfbfb;
+$text-color: #0d0d0d;
+
+.App {
+    text-align: center;
+    background-color: $background;
+    color: $text-color;
+    font-size: 1em;
+    font-family: $body;
+    margin: 0;
+    padding: 0;
+    .heading{
+        font-family: $heading;
+        font-size: 32px;
+        letter-spacing: 4px;
+    }
+    .body{
+        font-family: $body;
+        color: rgb(94, 94, 94);
+    }
+    #top-header{
+        margin: 0;
+        padding-top: 60px;
+        font-family: $heading;
+        font-size: 8vw;
+        letter-spacing: 16px;
+        font-weight: 200;
+    }
+    #nav-section{
+        width: 100%;
+        
+        #navigation{
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            
+        }
+        a{
+            text-decoration: none;
+            color: $text-color;
+        }
+        //when nav item is clicked make active
+        .active{
+            border-style: solid;
+            border-color: #8b0b0b;
+        }
+        .item{
+            width: 160px;
+            padding: 20px 0 20px 0;
+            border-radius: 4px;
+            border-style: solid;
+            border-color: $background;
+        }
+        .item:hover{
+            
+            border-style: solid;
+            border-color: $text-color;
+        }
+       
+    }
+    #hero-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+        gap: 60px;
+        #hero-image{
+            background-image: url("https://images.unsplash.com/photo-1579541513287-3f17a5d8d62c?q=80&w=2704&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            width: 35%;
+            height: 600px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 4px;
+        }
+        #hero-text{
+            width: 600px;
+            p{
+                line-height: 30px;
+                margin-bottom: 60px;
+            }
+            a{
+                text-decoration: none;
+                color: $text-color;
+            }
+            
+        }
+    }
+    #all-display{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+        .display-card{
+            max-width: 300px;
+        }
+        .image-display{
+            width: 300px;
+            height: 300px;
+        }
+    }
+   
+  }
+  
