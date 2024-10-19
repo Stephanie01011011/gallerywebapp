@@ -8,6 +8,17 @@
   margin: 0;
   padding: 0;
 }
+.App .item {
+  width: 200px;
+  padding: 20px 0 20px 0;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #fbfbfb;
+}
+.App .item:hover {
+  border-style: solid;
+  border-color: #0d0d0d;
+}
 .App .heading {
   font-family: "Pathway", sans-serif;
   font-size: 32px;
@@ -40,17 +51,6 @@
 .App #nav-section .active {
   border-style: solid;
   border-color: #8b0b0b;
-}
-.App #nav-section .item {
-  width: 160px;
-  padding: 20px 0 20px 0;
-  border-radius: 4px;
-  border-style: solid;
-  border-color: #fbfbfb;
-}
-.App #nav-section .item:hover {
-  border-style: solid;
-  border-color: #0d0d0d;
 }
 .App #hero-section {
   display: flex;
@@ -92,4 +92,76 @@
 .App #all-display .image-display {
   width: 300px;
   height: 300px;
+}
+.App #all-display .bottom-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.App #all-display .bottom-display p {
+  width: 90%;
+}
+.App #category-btns {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 36px;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.App #category-section {
+  width: 100%;
+  padding-bottom: 100px;
+}
+.App #category-banner {
+  background-image: url("https://images.unsplash.com/flagged/photo-1572392640988-ba48d1a74457?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXJ0fGVufDB8fDB8fHww");
+  height: 200px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 60px;
+}
+.App #category-header {
+  margin-bottom: 100px;
+}
+.App #artist-section {
+  width: 100%;
+  padding-bottom: 100px;
+}
+.App #artist-banner {
+  background-image: url("https://images.unsplash.com/photo-1578301978018-3005759f48f7?q=80&w=3244&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  height: 200px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position-y: -650px;
+  background-size: cover;
+  margin-bottom: 60px;
+}
+.App #artist-btns {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 36px;
+  gap: 160px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.App #artist-header {
+  margin-bottom: 100px;
+}
+.App .back-btn {
+  background-color: #0d0d0d;
+  width: 100px;
+  height: 30px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-left: 60px;
+  cursor: pointer;
 }/*# sourceMappingURL=app.css.map */
